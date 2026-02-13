@@ -1,0 +1,17 @@
+.featured_products {
+  margin: 30px;
+}
+.featured_products > h2 {
+  text-align: center;
+  margin: 40px;
+}
+.featured_products_lists {
+  display: flex;
+  justify-content: space-evenly;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+}
