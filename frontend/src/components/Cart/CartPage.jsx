@@ -39,7 +39,7 @@ const CartPage = () => {
       <div className="align_center user_info">
         <img
           className="user_profile"
-          src={`http://localhost:5005/profile/${user?.profilePic}`}
+          src={`https://cartwish-k8yo.onrender.com/profile/${user?.profilePic}`}
           alt="user profile"
         />
         <div>

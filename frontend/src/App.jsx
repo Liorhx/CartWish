@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 
-import "./app.css";
+import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Routing from "./components/Routings/Routing";
 import { useEffect } from "react";
@@ -39,7 +39,7 @@ const App = () => {
     (product, quantity) => {
       const updatedCart = [...cart];
       const productIndex = updatedCart.findIndex(
-        (item) => item.product._id === product._id
+        (item) => item.product._id === product._id,
       );
       if (productIndex === -1) {
         updatedCart.push({ product: product, quantity: quantity });
@@ -56,7 +56,7 @@ const App = () => {
           setCart(cart);
         });
     },
-    [cart]
+    [cart],
   );
   const removeFromCart = useCallback(
     (id) => {
@@ -68,14 +68,14 @@ const App = () => {
         setCart(oldCart);
       });
     },
-    [cart]
+    [cart],
   );
   const updateCart = useCallback(
     (type, id) => {
       const oldCart = [...cart];
       const updatedCart = [...cart];
       const productIndex = updatedCart.findIndex(
-        (item) => item.product._id === id
+        (item) => item.product._id === id,
       );
       if (type === "increment") {
         // console.log("inc");
@@ -97,7 +97,7 @@ const App = () => {
         });
       }
     },
-    [cart]
+    [cart],
   );
   const getCart = useCallback(() => {
     getCartApi()

@@ -7,7 +7,7 @@ const ProductSidebar = () => {
     "/category",
     null,
     ["categories"],
-    24 * 60 * 1000
+    24 * 60 * 1000,
   );
   return (
     <section className="products_sidebar">
@@ -21,7 +21,7 @@ const ProductSidebar = () => {
               sidebar={true}
               title={category.name}
               link={`/products?category=${category.name}`}
-              emoji={`http://localhost:5005/category/${category.image}`}
+              emoji={`https://cartwish-k8yo.onrender.com/category/${category.image}`}
             />
           ))}
 

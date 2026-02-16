@@ -18,7 +18,7 @@ const ProductCard = ({ product }) => {
       <div className="align_center product_image">
         <NavLink to={`/product/${product?._id}`}>
           <img
-            src={`http://localhost:5005/products/${product?.images[0]}`}
+            src={`https://cartwish-k8yo.onrender.com/products/${product?.images[0]}`}
             alt=""
           />
         </NavLink>

@@ -40,14 +40,14 @@ const SingleProductPage = () => {
                         selectedImage === index ? "selected_image" : ""
                       }
                       onClick={() => setSelectedImage(index)}
-                      src={`http://localhost:5005/products/${image}`}
+                      src={`https://cartwish-k8yo.onrender.com/products/${image}`}
                       alt={product.title}
                     />
                   ))}
                 </div>
                 <div className="single_product_display">
                   <img
-                    src={`http://localhost:5005/products/${product.images[selectedImage]}`}
+                    src={`https://cartwish-k8yo.onrender.com/products/${product.images[selectedImage]}`}
                     alt={product.title}
                   />
                 </div>
