@@ -1,6 +1,6 @@
 import React, { useCallback } from "react";
 
-import "./app.css";
+import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import Routing from "./components/Routings/Routing";
 import { useEffect } from "react";
